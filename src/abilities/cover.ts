@@ -24,10 +24,10 @@ export class CoverAbility extends Ability {
   protected get serviceClass(): ServiceClass {
     if (this.type === "door") {
       return this.Service.Door;
-    } else if (this.type === "windowCovering") {
-      return this.Service.WindowCovering;
+    } else if (this.type === "window") {
+      return this.Service.Window;
     }
-    return this.Service.Window;
+    return this.Service.WindowCovering;
   }
 
   /**
